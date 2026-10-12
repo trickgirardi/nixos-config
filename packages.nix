@@ -143,6 +143,7 @@
 
   nixpkgs.config.permittedInsecurePackages = [
     "electron-40.10.5"
+    "electron-41.10.7"
   ];
 
   programs.nix-ld.enable = true;

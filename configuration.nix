@@ -109,7 +109,5 @@
 
   nixpkgs.config.allowUnfree = true;
 
-  system.copySystemConfiguration = true;
-
   system.stateVersion = "26.05";
 }
