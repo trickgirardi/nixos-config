@@ -1,4 +1,4 @@
-{ pkgs, ... } : {
+{ pkgs, inputs, ... } : {
   environment.systemPackages = with pkgs; [
     # CORE UTILS
     neovim
@@ -141,13 +141,12 @@
     ];
   };
 
+  nixpkgs.overlays = [ inputs.claude-code.overlays.default ];
+
   nixpkgs.config.permittedInsecurePackages = [
     "electron-40.10.5"
     "electron-41.10.7"
   ];
 
   programs.nix-ld.enable = true;
-
-  # Another tools
-  # Bottles - flatpak
 }
