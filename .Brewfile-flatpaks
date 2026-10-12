@@ -1,8 +1,0 @@
-flatpak "app.zen_browser.zen"
-flatpak "com.mattjakeman.ExtensionManager"
-flatpak "com.rtosta.zapzap"
-flatpak "com.usebruno.Bruno"
-flatpak "io.beekeeperstudio.Studio"
-flatpak "it.mijorus.gearlever"
-flatpak "me.proton.Pass"
-flatpak "net.nokyan.Resources"

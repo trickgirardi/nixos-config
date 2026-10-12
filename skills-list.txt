@@ -1,7 +1,0 @@
-Global Skills
-
-ask                     ~/.agents/skills/ask                     Agents: Antigravity, Codex, Cursor, Gemini CLI
-caveman                 ~/.agents/skills/caveman                 Agents: Antigravity, Codex, Cursor, Gemini CLI
-find-skills             ~/.agents/skills/find-skills             Agents: Antigravity, Codex, Cursor, Gemini CLI
-shadcn                  ~/.agents/skills/shadcn                  Agents: Antigravity, Codex, Cursor, Gemini CLI
-spec-driven-development ~/.agents/skills/spec-driven-development Agents: Antigravity, Codex, Cursor, Gemini CLI
