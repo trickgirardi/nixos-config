@@ -5,6 +5,7 @@
     [
       ./hardware-configuration.nix
       ./packages.nix
+      ./nix-ld.nix
     ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
