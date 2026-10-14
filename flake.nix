@@ -5,6 +5,8 @@
 
   inputs.claude-code.url = "github:sadjow/claude-code-nix";
 
+  inputs.nix-flatpak.url = "github:gmodena/nix-flatpak";
+
   outputs = { self, nixpkgs, ... }@inputs: {
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";

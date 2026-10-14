@@ -6,6 +6,7 @@
       ./hardware-configuration.nix
       ./packages.nix
       ./nix-ld.nix
+      ./flatpak.nix
     ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
@@ -101,7 +102,6 @@
   environment.shells = with pkgs; [ fish ];
   programs.starship.enable = true;
 
-  services.flatpak.enable = true;
   xdg.portal.enable = true;
 
   programs.appimage = {
