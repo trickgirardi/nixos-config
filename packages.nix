@@ -10,6 +10,7 @@
     ffmpeg
     tree
     pciutils
+    grim
 
     # CORE APPS
     firefox
@@ -43,7 +44,6 @@
     resources
     qbittorrent
     flameshot
-    stremio-linux-shell
     zapzap
     wpsoffice
 
@@ -106,19 +106,13 @@
     uv
     go
     rustc
-    wrangler
+    unstable.wrangler
 
     # AI TOOLS
-    claude-code
-    codex
-    opencode
-    opencode-desktop
+    unstable.claude-code
+    unstable.codex
     skills
     ctx7
-
-    # WAYLAND TOOLS
-    grim
-    hyprpicker
   ];
 
   fonts = {
@@ -136,7 +130,14 @@
     ];
   };
 
-  nixpkgs.overlays = [ inputs.claude-code.overlays.default ];
+  nixpkgs.overlays = [
+    (final: prev: {
+      unstable = import inputs.nixpkgs-unstable {
+        system = final.stdenv.hostPlatform.system;
+        config.allowUnfree = true;
+      };
+    })
+  ];
 
   nixpkgs.config.permittedInsecurePackages = [
     "electron-40.10.5"

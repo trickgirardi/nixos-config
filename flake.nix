@@ -3,7 +3,7 @@
 
   inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixos-26.05";
 
-  inputs.claude-code.url = "github:sadjow/claude-code-nix";
+  inputs.nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
 
   inputs.nix-flatpak.url = "github:gmodena/nix-flatpak";
 
