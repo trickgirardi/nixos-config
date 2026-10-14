@@ -7,6 +7,7 @@
       ./packages.nix
       ./nix-ld.nix
       ./flatpak.nix
+      ./home.nix
     ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
@@ -99,8 +100,6 @@
 
   programs.fish.enable = true;
   users.defaultUserShell = pkgs.fish;
-  environment.shells = with pkgs; [ fish ];
-  programs.starship.enable = true;
 
   xdg.portal.enable = true;
 
