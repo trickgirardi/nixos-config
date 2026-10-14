@@ -38,6 +38,9 @@
   services.gnome.sushi.enable = true;
   environment.gnome.excludePackages = [ pkgs.gnome-tour ];
 
+  qt.platformTheme = "gnome";
+  qt.style = "adwaita";
+
   programs.niri.enable = true;
   programs.niri.useNautilus = true;
 

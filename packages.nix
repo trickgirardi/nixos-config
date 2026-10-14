@@ -5,7 +5,6 @@
     micro-full
     wget
     fastfetch
-    tmux
     zellij
     git
     ffmpeg
@@ -28,8 +27,6 @@
     jetbrains.rider
 
     # GNOME APPS
-    gnome-weather
-    gnome-clocks
     gnome-calendar
     gnome-tweaks
     gnome-calculator
@@ -98,8 +95,6 @@
     sassc
     gtk-engine-murrine
     gnome-themes-extra
-    qgnomeplatform-qt6
-    qgnomeplatform
 
     # DEV ENV
     dotnet-sdk_10
@@ -111,13 +106,13 @@
     uv
     go
     rustc
+    wrangler
 
     # AI TOOLS
     claude-code
     codex
     opencode
     opencode-desktop
-    code-cursor
     skills
     ctx7
 
