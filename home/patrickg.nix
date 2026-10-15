@@ -11,11 +11,16 @@
 
   programs.fish = {
     enable = true;
-    interactiveShellInit = ''
-      set -g fish_greeting
-      fastfetch
-    '';
+    functions.fish_greeting = "fastfetch";
   };
 
   programs.starship.enable = true;
+
+  programs.eza = {
+    enable = true;
+    enableFishIntegration = true;
+    icons = "auto";
+    git = true;
+    extraOptions = [ "--group-directories-first" ];
+  };
 }
